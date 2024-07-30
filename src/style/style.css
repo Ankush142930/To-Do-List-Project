@@ -169,3 +169,12 @@ input::placeholder {
   justify-content: center;
   gap: 0.75rem;
 }
+
+.clear {
+  background: #473573;
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: white;
+  width: 10%;
+  font-weight: bold;
+}
