@@ -7,6 +7,7 @@ import Header from './components/Header';
 import TODOHero from './components/TODOHero';
 import TODOList from './components/TODOList';
 import { nanoid } from 'nanoid';
+import ClearButton from './components/ClearButton';
 
 const App = () => {
   const [todos, setTodos] = useState([]);
@@ -24,6 +25,7 @@ const App = () => {
         <TODOHero todos_completed={todos_completed} todos_total={todos_total} />
         <Form setTodos={setTodos} />
         <TODOList todos={todos} setTodos={setTodos} />
+        <ClearButton todos={todos} setTodos={setTodos}/>
       </div>
     </div>
   );
